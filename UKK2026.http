@@ -1,0 +1,17 @@
+@UKK2026_HostAddress = http://localhost:5275
+
+GET {{UKK2026_HostAddress}}/api/v1/auth/captcha-config
+Accept: application/json
+
+###
+
+POST {{UKK2026_HostAddress}}/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "123",
+  "captchaToken": "automated-test-token"
+}
+
+###

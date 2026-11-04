@@ -1,0 +1,13 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": [
+    "query.sql"
+  ],
+  "permission": {
+    "edit": {
+      "*": "allow",
+      "query.sql": "deny",
+      "**/query.sql": "deny"
+    }
+  }
+}
